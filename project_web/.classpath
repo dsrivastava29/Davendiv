@@ -33,7 +33,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Lab9_divyansh/src/main/webapp/WEB-INF/lib/hibernate3.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-collections-3.1.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar"/>
@@ -49,10 +48,6 @@
 	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/FlowDemo/src/main/webapp/WEB-INF/lib/spring-faces-2.3.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/FlowDemo/src/main/webapp/WEB-INF/lib/spring-js-resources-2.3.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/FlowDemo/src/main/webapp/WEB-INF/lib/spring-webflow-2.3.0.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/project_web/src/main/webapp/resources/lib/json-20140107.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/project_web/src/main/webapp/resources/lib/commons-fileupload-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/project_web/src/main/webapp/resources/lib/commons-io-2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/project_web/src/main/webapp/WEB-INF/lib/javax.servlet-api-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Divyansh/Documents/workspace-sts-3.7.3.RELEASE/project_web/src/main/webapp/WEB-INF/lib/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/json-20140107.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
