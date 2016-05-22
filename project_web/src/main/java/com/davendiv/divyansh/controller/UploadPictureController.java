@@ -53,7 +53,7 @@ public class UploadPictureController {
 			if (filea.getSize() > 0) {
 				inputStream = filea.getInputStream();
 
-				String rootPath = System.getProperty("user.dir");
+				String rootPath = request.getSession().getServletContext().getRealPath("");
 				File dir = new File(rootPath + File.separator + "webapp" + File.separator + "resources" + File.separator
 						+ "div-picture");
 				if (!dir.exists()) {
