@@ -1,9 +1,9 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.Locale" %>
-<%@ page import="java.util.Collections" %>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="java.util.Locale"%>
+<%@ page import="java.util.Collections"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -22,35 +22,34 @@
 <body>
 	<jsp:include page="./header.jsp"></jsp:include>
 	<div>
-		<form:form action="newuser.htm" commandName="users" method="post" id="crazy-form" class="crazy-form">
+		<form:form action="newuser.htm" commandName="users" method="post"
+			id="crazy-form" class="crazy-form">
 			<header>Please provide some more information before
 				accessing your own daven </header>
 			<fieldset>
-			<form:errors path="*" />
+				<form:errors path="*" />
 				<section>
 					<label class="input"> <i class="icon-append fa fa-user"></i>
 						<input type="text" name="uname" placeholder="Username" required
-						value="${users.uname}"/> <b
-						class="tooltip tooltip-bottom-right">Your unique identity</b>
-						<font color="red"><form:errors path="uname"/></font>
+						value="${users.uname}" /> <b class="tooltip tooltip-bottom-right">Your
+							unique identity</b> <font color="red"><form:errors
+								path="uname" /></font>
 					</label>
 				</section>
 				<section>
 					<label class="input"> <i class="icon-append fa fa-user"></i>
 						<input type="password" name="pass" placeholder="Password" required
-						value="${users.pass}"  /> <b
-						class="tooltip tooltip-bottom-right">Your unique password</b>
-						<font color="red"><form:errors path="pass"/></font>
+						value="${users.pass}" /> <b class="tooltip tooltip-bottom-right">Your
+							unique password</b> <font color="red"><form:errors path="pass" /></font>
 					</label>
 				</section>
 				<section>
 					<label class="input"> <i
-						class="icon-append fa fa-envelope-o"></i> <input type="email" required
-						name="mail" placeholder="Email address" value="${users.mail}"
-						> <b
+						class="icon-append fa fa-envelope-o"></i> <input type="email"
+						required name="mail" placeholder="Email address"
+						value="${users.mail}"> <b
 						class="tooltip tooltip-bottom-right">Required to verify your
-							account</b>
-							<font color="red"><form:errors path="mail"/></font>
+							account</b> <font color="red"><form:errors path="mail" /></font>
 					</label>
 				</section>
 			</fieldset>
@@ -60,8 +59,8 @@
 					<section class="col col-4">
 						<label class="input"> <input type="text"
 							name="personalInfo.firstname" placeholder="First name" required>
-						</label>
-						<font color="red"><form:errors path="personalInfo.firstname"/></font>
+						</label> <font color="red"><form:errors
+								path="personalInfo.firstname" /></font>
 					</section>
 					<section class="col col-4">
 						<label class="input"> <input type="text"
@@ -75,42 +74,44 @@
 					</section>
 				</div>
 				<%
-				String[] locales = Locale.getISOCountries();
-			    ArrayList<String> list = new ArrayList<String>();
-			    pageContext.setAttribute("list", list);
-			    for (String countryCode : locales) {
-			        Locale obj = new Locale("en", countryCode);
-			        list.add(obj.getDisplayCountry());
-			    }
-			    Collections.sort(list);
+					String[] locales = Locale.getISOCountries();
+						ArrayList<String> list = new ArrayList<String>();
+						pageContext.setAttribute("list", list);
+						for (String countryCode : locales) {
+							Locale obj = new Locale("en", countryCode);
+							list.add(obj.getDisplayCountry());
+						}
+						Collections.sort(list);
 				%>
-				<div class="select">			
-						<select name="personalInfo.country">
-							<c:forEach items="${list}" var="obj">
-							<option><c:out value="${obj}"/></option>
-							</c:forEach>
-						</select> 
-						<b class="tooltip tooltip-bottom-right">Your Country</b>
-					</div>
+				<div class="select">
+					<select name="personalInfo.country">
+						<c:forEach items="${list}" var="obj">
+							<option><c:out value="${obj}" /></option>
+						</c:forEach>
+					</select> <b class="tooltip tooltip-bottom-right">Your Country</b>
+				</div>
 				<section>
 					<label class="input"> <i class="icon-append fa fa-user"></i>
-						<input type="text" name="personalInfo.state" placeholder="State" required /> <b
-						class="tooltip tooltip-bottom-right">Your state</b>
-						<font color="red"><form:errors path="personalInfo.state"/></font>
+						<input type="text" name="personalInfo.state" placeholder="State"
+						required /> <b class="tooltip tooltip-bottom-right">Your
+							state</b> <font color="red"><form:errors
+								path="personalInfo.state" /></font>
 					</label>
 				</section>
 				<section>
 					<label class="input"> <i class="icon-append fa fa-user"></i>
-						<input type="text" name="personalInfo.city" placeholder="City"  required/> <b
-						class="tooltip tooltip-bottom-right">Your current city</b>
-						<font color="red"><form:errors path="personalInfo.city"/></font>
+						<input type="text" name="personalInfo.city" placeholder="City"
+						required /> <b class="tooltip tooltip-bottom-right">Your
+							current city</b> <font color="red"><form:errors
+								path="personalInfo.city" /></font>
 					</label>
-				</section>				
+				</section>
 			</fieldset>
-<footer>
-					<button type="submit" class="button">Add Information  >> </button>
-					<a href="login.htm"><button type="button" class="button">Later On  >> </button></a>
-				</footer>
+			<footer>
+				<button type="submit" class="button">Add Information >></button>
+				<a href="login.htm"><button type="button" class="button">Later
+						On >></button></a>
+			</footer>
 		</form:form>
 	</div>
 </body>

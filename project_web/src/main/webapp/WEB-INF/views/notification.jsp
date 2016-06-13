@@ -110,6 +110,7 @@
 		$(document).ready(
 				function() {
 					$('#nottable').dataTable();
+					//Confirm connection notification add logic
 					$("button[id='add']").click(
 							function() {
 								var link = $(this).val();

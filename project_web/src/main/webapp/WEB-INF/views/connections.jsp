@@ -220,12 +220,13 @@
 		value="${webappRoot}/resources/js/dataTables/dataTables.bootstrap.js"
 		var="dtstrp" />
 	<script src="${dtstrp}"></script>
-	<script>
+	<script>	
 		$(document).ready(
 				function() {
+					//Loading datatables for all available connections and user connections
 					$('#dataTables-example').dataTable();
 					$('#dataTables-example2').dataTable();
-
+					//Add User to connection Logic
 					$("button[id='add']").click(
 							function() {
 								var link = $(this).val();
