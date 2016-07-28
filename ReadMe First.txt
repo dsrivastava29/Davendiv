@@ -16,3 +16,5 @@ It is still under development but basic features work fine.
 No need to run schema still uploading here as its last great running copy of schema.
 Just change hib config. and run project.
 On first go, it will create schema and tabled. No need to do anything.
+
+- Update jar for commons Fileupload which is given under lib folder in webapp resources- if image upload does not work properly
