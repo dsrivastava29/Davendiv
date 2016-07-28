@@ -7,6 +7,7 @@ It contains hands on for Web Tools course and related concepts.
 -Spring Web Flow Integration (for admin section)
 
 Development tools used: Eclipse Spring Tool Suite (STS) and Maven
+(Consider Maven update if project shows any error after loading on eclipse)
 
 : Pojo's have been created based on E-R model and modified for the use in application.
 
